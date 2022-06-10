@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*se uriliza para crear variables con valores que sean repetidos en el sitio web. colores, tamaños, margenes, etc*/
+:root{
+    --primary-color: #07aed8; 
+    --secondary-color: #000000;
+}
+
+/*llamar una clase*/
+.fila{
+    display: flex;
+    width: 1200px;
+    margin: 25px auto;
+    border: 2px solid var(--secondary-color);
+}
+
+
+/*llamar una clase y su contenido*/
+.fila .contBotones{
+    width: 50%;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.contBotones h2{
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contBotones button{
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid white;
+    font-size: 20px;
+    margin: 12px;
+}
+
+
+    
+.contFigura h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.contFigura #figura{
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin: 40px auto;
+    transition: 1s;
+}
+
+.fila .contFigura{
+    width: 50%;
+    background: #00f735;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    border: 5px solid #ffffff;
+}
+
+
+/*ROTATE  sirve para girar*/
+/*scale sirve para aumentat o disminuir*/
+/*translate es mover en eje x y y*/
+/*skew es distorcionar*/
+
+#figura.rombo {
+    transform: rotate(135deg);
+    background: #ffffff;
+    border: 5px solid #000000;
+    border-radius: 0%;
+}
+
+#figura.rectanguloH {
+    width: 300px;
+    height: 100px;
+    background: black;
+    margin: 100px auto;
+    transition: 1s;
+}
+
+#figura.rectanguloV {
+    width: 100px;
+    height: 300px;
+    background: black;
+    margin: 40px auto;
+    transition: 1s;
+}
+
+#figura.arriba {
+    width: 130px;
+    height: 130px;
+    transform: translateY(-35%);
+    margin: 40px auto;
+}
+
+#figura.abajo {
+    width: 150px;
+    height: 150px;
+    transform: translatey(80%);
+    margin: 40px auto;
+}
+
+#figura.izquierda {
+    width: 200px;
+    height: 200px;
+    transform: translateX(-80%);
+    margin: 40px auto;
+}
+
+#figura.derecha {
+    width: 200px;
+    height: 200px;
+    transform: translateX(80%);
+    margin: 40px auto;
+}
+
+#figura.diagonal {
+    transform: translate(80%, 40%);
+    
+}
+
+#figura.triangulo {
+    width: 0;
+    height: 0;
+    background: transparent;
+     border-right: 100px solid transparent;
+     border-left: 100px solid transparent;
+     border-bottom: 200px solid #520101;
+}
+
+#figura.imagen {
+    background-image: url(../img/celebra.gif);
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#figura.fecha {
+    width: 200;
+    padding: 200;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#figura.aleatorio {
+    width: 200;
+    padding: 200;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.fila .contform{
+    width: 50%;
+    background: #da6607;
+    color: #000000;
+    text-align: center;
+    padding: 40px;
+}
+
+
+.fila .contform h2{
+    font-size: 30px;
+    color: #000000;
+}
+
+.fila .contform p{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.contform form .formGroup{
+    padding: 10px 50px;
+    text-align: left;
+}
+
+form .formGroup label{
+    display: block;
+    font-size: 20px;
+}
+
+form .formGroup input,
+form .formGroup select,
+form .formGroup textarea{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+form button{
+    padding: 10px 10px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    margin: 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form button:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+form{
+    margin-top: 40px;
+}
+
+
+
+.fila .contAvatar{
+    text-align: center;
+    padding: 40px;
+    background: #efefef;
+    width: 50%;
+    color: #000000;
+
+}
+
+.fila .contAvatar img{
+    width: 200px;
+}
+
+.fila .contAvatar h3{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.fila .contAvatar p{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+#contAvatar.Morado{
+    background: #7d31e0;
+    color: #ffffff;
+} 
+
+#contAvatar.Rojo{
+    background: #ff0000;
+}
+
+#contAvatar.Azul{
+    background: #000088;
+}
+
+#contAvatar.Turquesa{
+    background: turquoise;
+    color: #000000;
+}
+
+#contAvatar.Verde{
+    background: #489c5a;
+}
+
+.btn-nav{
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    background: #000000;
+    color: #efefef;
+    padding: 12px 40px;
+    text-decoration: none;
+    transform: translateY(250%);
+    
+}
+
+#figura.paralelogramo{
+    width: 150px; 
+     height: 100px; 
+     border: 3px solid #555; 
+     background: #428bca;
+     -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+     -ms-transform: skew(20deg);
+     -o-transform: skew(20deg);
+     transform: skew(20deg);
+}
+
+#figura.trapecio{
+    width: 250px;
+    height: 0px;
+    background: transparent;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid #428bca;
+}
+
+#figura.tricolor{
+    width: 0; 
+     height: 0; 
+     border-left: 100px solid #428bca;
+     border-top: 50px solid #f0ad4e;
+     border-bottom: 50px solid #d9534f;
+}
+
+
